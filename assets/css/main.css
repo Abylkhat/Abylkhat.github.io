@@ -3368,3 +3368,17 @@ button:disabled,
     margin-top: 0;
     padding-top: 0;
 }
+
+#code {
+    margin-bottom: 20px;
+    width: 100%;
+    float: left;
+    min-height: 100px;
+    overflow: hidden;
+    background-color: #d9dadb;
+}
+
+#output {
+    color: #3d4449;
+    font-family: "Roboto Slab", serif;
+}
