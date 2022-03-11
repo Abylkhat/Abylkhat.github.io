@@ -1,9 +1,4 @@
 <!DOCTYPE HTML>
-<!--
-	Editorial by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
 
 <head>
@@ -11,6 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="shortcut icon" href="/icon.ico" type="image/x-icon">
 </head>
 
 <body class="is-preload">
@@ -36,9 +32,11 @@
                 </section>
 
                 <!-- Compilator -->
-                <h3>C++ компилятор</h3>
-                <div id="code"><pre>
-#include &lt;iostream&gt;
+                <div id="compilator">
+                    <h3>C++ компилятор</h3>
+                    <div id="code">
+                        <!-- 
+    #include &lt;iostream&gt;
 using namespace std;
 
 int main()
@@ -46,120 +44,122 @@ int main()
     cout &lt;&lt; "Hello, world!" &lt;&lt; endl;
     return 0;
 }<pre>
-                </div>
+-->
+                    </div>
 
-                <button id="run" onclick='run();'>Запуск</button>
-                <h5>Вывод:</h5><pre id="output">Ожидание...</pre>
-
-                </div>
-            </div>
-
-            <!-- Sidebar -->
-            <div id="sidebar">
-                <div class="inner">
-
-                    <!-- Menu -->
-                    <nav id="menu">
-                        <header class="major">
-                            <h2>Главы</h2>
-                        </header>
-                        <ul>
-                            <li><a href="index.html">Главная</a></li>
-                            <li>
-                                <span class="opener">Первая глава</span>
-                                <ul>
-                                    <li><a href="/c1p1.html">Первые шаги</a></li>
-                                    <li><a href="#">Ipsum Adipiscing</a></li>
-                                    <li><a href="#">Tempus Magna</a></li>
-                                    <li><a href="#">Feugiat Veroeros</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <span class="opener">Вторая глава</span>
-                                <ul>
-                                    <li><a href="#">Lorem Dolor</a></li>
-                                    <li><a href="#">Ipsum Adipiscing</a></li>
-                                    <li><a href="#">Tempus Magna</a></li>
-                                    <li><a href="#">Feugiat Veroeros</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <span class="opener">Третья глава</span>
-                                <ul>
-                                    <li><a href="#">Lorem Dolor</a></li>
-                                    <li><a href="#">Ipsum Adipiscing</a></li>
-                                    <li><a href="#">Tempus Magna</a></li>
-                                    <li><a href="#">Feugiat Veroeros</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <span class="opener">Четвертая глава</span>
-                                <ul>
-                                    <li><a href="#">Lorem Dolor</a></li>
-                                    <li><a href="#">Ipsum Adipiscing</a></li>
-                                    <li><a href="#">Tempus Magna</a></li>
-                                    <li><a href="#">Feugiat Veroeros</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </nav>
+                    <button id="run" onclick='run();'>Запуск</button>
+                    <h5>Вывод:</h5><pre id="output">Ожидание...</pre>
 
                 </div>
             </div>
-
         </div>
 
-        <!-- Scripts -->
-        <script src="assets/js/jquery.min.js"></script>
-        <script src="assets/js/ace.js"></script>
-        <script src="assets/js/browser.min.js"></script>
-        <script src="assets/js/breakpoints.min.js"></script>
-        <script src="assets/js/util.js"></script>
-        <script src="assets/js/main.js"></script>
+        <!-- Sidebar -->
+        <div id="sidebar">
+            <div class="inner">
 
-        <script>
-            var code;
+                <!-- Menu -->
+                <nav id="menu">
+                    <header class="major">
+                        <h2>Главы</h2>
+                    </header>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li>
+                            <span class="opener">Первая глава</span>
+                            <ul>
+                                <li><a href="/c1p1.html">Первые шаги</a></li>
+                                <li><a href="#">Ipsum Adipiscing</a></li>
+                                <li><a href="#">Tempus Magna</a></li>
+                                <li><a href="#">Feugiat Veroeros</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span class="opener">Вторая глава</span>
+                            <ul>
+                                <li><a href="#">Lorem Dolor</a></li>
+                                <li><a href="#">Ipsum Adipiscing</a></li>
+                                <li><a href="#">Tempus Magna</a></li>
+                                <li><a href="#">Feugiat Veroeros</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span class="opener">Третья глава</span>
+                            <ul>
+                                <li><a href="#">Lorem Dolor</a></li>
+                                <li><a href="#">Ipsum Adipiscing</a></li>
+                                <li><a href="#">Tempus Magna</a></li>
+                                <li><a href="#">Feugiat Veroeros</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span class="opener">Четвертая глава</span>
+                            <ul>
+                                <li><a href="#">Lorem Dolor</a></li>
+                                <li><a href="#">Ipsum Adipiscing</a></li>
+                                <li><a href="#">Tempus Magna</a></li>
+                                <li><a href="#">Feugiat Veroeros</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
 
-            $(function() {
-                code = ace.edit("code"); // создаем редактор из элемента с id="code"
-                code.setTheme("ace/theme/textmate"); // выбираем тему оформления для подсветки синтаксиса
-                code.getSession().setMode("ace/mode/c_cpp"); // говорим что код надо подсвечивать как C++ код
-                code.setShowPrintMargin(false); // опционально: убираем вертикальную границу в 80 сиволов
-                code.setOptions({
-                    maxLines: Infinity, // опционально: масштабировать редактор вертикально по размеру кода
-                    fontSize: "12pt", // опционально: размер шрифта ставим побольше
-                });
-                code.$blockScrolling = Infinity; // отключаем устаревшие, не поддерживаемые фишки редактора
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/ace.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <script>
+        var code;
+
+        $(function() {
+            code = ace.edit("code"); // создаем редактор из элемента с id="code"
+            code.setTheme("ace/theme/textmate"); // выбираем тему оформления для подсветки синтаксиса
+            code.getSession().setMode("ace/mode/c_cpp"); // говорим что код надо подсвечивать как C++ код
+            code.setShowPrintMargin(false); // опционально: убираем вертикальную границу в 80 сиволов
+            code.setOptions({
+                maxLines: Infinity, // опционально: масштабировать редактор вертикально по размеру кода
+                fontSize: "12pt", // опционально: размер шрифта ставим побольше
             });
-        </script>
-        <script>
-            function run() {
-                // Команда для компиляции на удаленном сервере
-                var cmd = "g++ -Wall main.cpp -o main_prog && echo 'Компиляция: УСПЕШНО." +
-                    " Вывод программы:\n' && ./main_prog && echo \"\n\"";
+            code.$blockScrolling = Infinity; // отключаем устаревшие, не поддерживаемые фишки редактора
+        });
+    </script>
+    <script>
+        function run() {
+            // Команда для компиляции на удаленном сервере
+            var cmd = "g++ -Wall main.cpp -o main_prog && echo 'Компиляция: УСПЕШНО." +
+                " Вывод программы:\n' && ./main_prog && echo \"\n\"";
 
-                var output = $("#output");
-                output.text('');
-                var to_compile = {
-                    "src": code.getValue(),
-                    "cmd": cmd,
-                };
-
-                output.text("Код выполняется... Пожалуйста подождите.");
-
-                $.ajax({
-                    url: "https://coliru.stacked-crooked.com/compile",
-                    type: "POST",
-                    data: JSON.stringify(to_compile),
-                    contentType: "text/plain; charset=utf-8",
-                    dataType: "text"
-                }).done(function(data) {
-                    output.text(data);
-                }).fail(function(data) {
-                    output.text("Server error: " + data);
-                });
+            var output = $("#output");
+            output.text('');
+            var to_compile = {
+                "src": code.getValue(),
+                "cmd": cmd,
             };
-        </script>
+
+            output.text("Код выполняется... Пожалуйста подождите.");
+
+            $.ajax({
+                url: "https://coliru.stacked-crooked.com/compile",
+                type: "POST",
+                data: JSON.stringify(to_compile),
+                contentType: "text/plain; charset=utf-8",
+                dataType: "text"
+            }).done(function(data) {
+                output.text(data);
+            }).fail(function(data) {
+                output.text("Server error: " + data);
+            });
+        };
+    </script>
 
 </body>
 

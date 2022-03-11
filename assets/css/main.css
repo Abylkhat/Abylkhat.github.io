@@ -3369,9 +3369,14 @@ button:disabled,
     padding-top: 0;
 }
 
+#compilator {
+    display: flex;
+    flex-direction: column;
+}
+
 #code {
     margin-bottom: 20px;
-    width: 100%;
+    width: 60%;
     float: left;
     min-height: 100px;
     overflow: hidden;
@@ -3381,4 +3386,8 @@ button:disabled,
 #output {
     color: #3d4449;
     font-family: "Roboto Slab", serif;
+}
+
+#run {
+    width: fit-content;
 }
