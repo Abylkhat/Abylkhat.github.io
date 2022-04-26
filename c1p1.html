@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Первая глава</title>
+    <title>Бірінші тарау</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
@@ -20,146 +20,152 @@
 
                 <!-- Header -->
                 <header id="header">
-                    <a href="index.html" class="logo"><strong>C++</strong> курс для начинающих</a>
+                    <a href="index.html" class="logo"><strong>C++</strong> бастамасы</a>
                     </ul>
                 </header>
 
                 <!-- Content -->
                 <section>
                     <header class="main">
-                        <h1>Первые шаги</h1>
+                        <h1>Бірінші қарапайым бағдарлама</h1>
                     </header>
+                    <p>С++ тілінде кез-келген бағдарлама басты файлды (*.h) қосатын #include директивасынан басталады. # include &ltiostream.h&gt<br><br> Кез-келген С++ тіліндегі бағдарлама ең кемінде бір main () функциядан тұрады. Бұл функция бағдарламаны
+                        жұмысқа қосқанда автоматты түрде шақырылады және бағдарламаның басқа функцияларын шақыра алады. void main ( )<br><br> std::cin - std::cout-қа қарама-қарсы.<br><br> std::cout мәнді шығару үшін қолданылады (cOUT = шығыс);<br><br>                        std::cin мәнді еңгізу үшін қолданылады (cIN = кіріс);<br><br>
+                    </p>
+                    <h4>1-тапсырма</h4>
+                    <p>Берілген компиляторға код жазу арқылы экранға “Hello World!” жазуын шығарыңыздар.
+                    </p>
                 </section>
 
                 <!-- Compilator -->
                 <div id="compilator">
                     <h3>C++ компилятор</h3>
-                    <div id="code">
-                        <!-- 
-    #include &lt;iostream&gt;
+                    <div id="code"><pre>
+#include &lt;iostream&gt;
 using namespace std;
 
 int main()
 {
-    cout &lt;&lt; "Hello, world!" &lt;&lt; endl;
+
     return 0;
 }<pre>
--->
                     </div>
 
                     <button id="run" onclick='run();'>Запуск</button>
-                    <h5>Вывод:</h5><pre id="output">Ожидание...</pre>
+                    <h5>Шығару:</h5><pre id="output">Күту...</pre>
+
+                    </div>
+
 
                 </div>
             </div>
-        </div>
 
-        <!-- Sidebar -->
-        <div id="sidebar">
-            <div class="inner">
+            <!-- Sidebar -->
+            <div id="sidebar">
+                <div class="inner">
 
-                <!-- Menu -->
-                <nav id="menu">
-                    <header class="major">
-                        <h2>Главы</h2>
-                    </header>
-                    <ul>
-                        <li><a href="index.html">Главная</a></li>
-                        <li>
-                            <span class="opener">Первая глава</span>
-                            <ul>
-                                <li><a href="/c1p1.html">Первые шаги</a></li>
-                                <li><a href="#">Ipsum Adipiscing</a></li>
-                                <li><a href="#">Tempus Magna</a></li>
-                                <li><a href="#">Feugiat Veroeros</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <span class="opener">Вторая глава</span>
-                            <ul>
-                                <li><a href="#">Lorem Dolor</a></li>
-                                <li><a href="#">Ipsum Adipiscing</a></li>
-                                <li><a href="#">Tempus Magna</a></li>
-                                <li><a href="#">Feugiat Veroeros</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <span class="opener">Третья глава</span>
-                            <ul>
-                                <li><a href="#">Lorem Dolor</a></li>
-                                <li><a href="#">Ipsum Adipiscing</a></li>
-                                <li><a href="#">Tempus Magna</a></li>
-                                <li><a href="#">Feugiat Veroeros</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <span class="opener">Четвертая глава</span>
-                            <ul>
-                                <li><a href="#">Lorem Dolor</a></li>
-                                <li><a href="#">Ipsum Adipiscing</a></li>
-                                <li><a href="#">Tempus Magna</a></li>
-                                <li><a href="#">Feugiat Veroeros</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </nav>
+                    <!-- Menu -->
+                    <nav id="menu">
+                        <header class="major">
+                            <h2>Тараулар</h2>
+                        </header>
+                        <ul>
+                            <li><a href="index.html">Басты бет</a></li>
+                            <li>
+                                <span class="opener">Бірінші тарау</span>
+                                <ul>
+                                    <li><a href="/c1p1.html">Бірінші қарапайым бағдарлама</a></li>
+                                    <li><a href="#">Ipsum Adipiscing</a></li>
+                                    <li><a href="#">Tempus Magna</a></li>
+                                    <li><a href="#">Feugiat Veroeros</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <span class="opener">Екінші тарау</span>
+                                <ul>
+                                    <li><a href="#">Lorem Dolor</a></li>
+                                    <li><a href="#">Ipsum Adipiscing</a></li>
+                                    <li><a href="#">Tempus Magna</a></li>
+                                    <li><a href="#">Feugiat Veroeros</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <span class="opener">Үшінші тарау</span>
+                                <ul>
+                                    <li><a href="#">Lorem Dolor</a></li>
+                                    <li><a href="#">Ipsum Adipiscing</a></li>
+                                    <li><a href="#">Tempus Magna</a></li>
+                                    <li><a href="#">Feugiat Veroeros</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <span class="opener">Төртінші тарау</span>
+                                <ul>
+                                    <li><a href="#">Lorem Dolor</a></li>
+                                    <li><a href="#">Ipsum Adipiscing</a></li>
+                                    <li><a href="#">Tempus Magna</a></li>
+                                    <li><a href="#">Feugiat Veroeros</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
 
+                </div>
             </div>
+
         </div>
 
-    </div>
+        <!-- Scripts -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/ace.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
 
-    <!-- Scripts -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/ace.js"></script>
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
+        <script>
+            var code;
 
-    <script>
-        var code;
-
-        $(function() {
-            code = ace.edit("code"); // создаем редактор из элемента с id="code"
-            code.setTheme("ace/theme/textmate"); // выбираем тему оформления для подсветки синтаксиса
-            code.getSession().setMode("ace/mode/c_cpp"); // говорим что код надо подсвечивать как C++ код
-            code.setShowPrintMargin(false); // опционально: убираем вертикальную границу в 80 сиволов
-            code.setOptions({
-                maxLines: Infinity, // опционально: масштабировать редактор вертикально по размеру кода
-                fontSize: "12pt", // опционально: размер шрифта ставим побольше
+            $(function() {
+                code = ace.edit("code"); // создаем редактор из элемента с id="code"
+                code.setTheme("ace/theme/textmate"); // выбираем тему оформления для подсветки синтаксиса
+                code.getSession().setMode("ace/mode/c_cpp"); // говорим что код надо подсвечивать как C++ код
+                code.setShowPrintMargin(false); // опционально: убираем вертикальную границу в 80 сиволов
+                code.setOptions({
+                    maxLines: Infinity, // опционально: масштабировать редактор вертикально по размеру кода
+                    fontSize: "12pt", // опционально: размер шрифта ставим побольше
+                });
+                code.$blockScrolling = Infinity; // отключаем устаревшие, не поддерживаемые фишки редактора
             });
-            code.$blockScrolling = Infinity; // отключаем устаревшие, не поддерживаемые фишки редактора
-        });
-    </script>
-    <script>
-        function run() {
-            // Команда для компиляции на удаленном сервере
-            var cmd = "g++ -Wall main.cpp -o main_prog && echo 'Компиляция: УСПЕШНО." +
-                " Вывод программы:\n' && ./main_prog && echo \"\n\"";
+        </script>
+        <script>
+            function run() {
+                // Команда для компиляции на удаленном сервере
+                var cmd = "g++ -Wall main.cpp -o main_prog && echo 'Компиляция: Орындалды." +
+                    " Бағдарлама қорытындысы:\n' && ./main_prog && echo \"\n\"";
 
-            var output = $("#output");
-            output.text('');
-            var to_compile = {
-                "src": code.getValue(),
-                "cmd": cmd,
+                var output = $("#output");
+                output.text('');
+                var to_compile = {
+                    "src": code.getValue(),
+                    "cmd": cmd,
+                };
+
+                output.text("Код орындалып жатыр... Күте тұрыңыз.");
+
+                $.ajax({
+                    url: "https://coliru.stacked-crooked.com/compile",
+                    type: "POST",
+                    data: JSON.stringify(to_compile),
+                    contentType: "text/plain; charset=utf-8",
+                    dataType: "text"
+                }).done(function(data) {
+                    output.text(data);
+                }).fail(function(data) {
+                    output.text("Server error: " + data);
+                });
             };
-
-            output.text("Код выполняется... Пожалуйста подождите.");
-
-            $.ajax({
-                url: "https://coliru.stacked-crooked.com/compile",
-                type: "POST",
-                data: JSON.stringify(to_compile),
-                contentType: "text/plain; charset=utf-8",
-                dataType: "text"
-            }).done(function(data) {
-                output.text(data);
-            }).fail(function(data) {
-                output.text("Server error: " + data);
-            });
-        };
-    </script>
+        </script>
 
 </body>
 
