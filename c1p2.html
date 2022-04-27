@@ -1,0 +1,253 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Екінші тарау</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="shortcut icon" href="/icon.ico" type="image/x-icon">
+</head>
+
+<body class="is-preload">
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Main -->
+        <div id="main">
+            <div class="inner">
+
+                <!-- Header -->
+                <header id="header">
+                    <a href="index.html" class="logo"><strong>C++</strong> бастамасы</a>
+                    </ul>
+                </header>
+
+                <!-- Content -->
+                <section style="padding-bottom: 0;">
+                    <header class="main">
+                        <h1>Операторлар. Салыстыру операторлары</h1>
+                    </header>
+                    <p>Мәндерді өзгерту және салыстыру<br><br>Әрине, сіз қандай деректер түрін пайдалансаңыз да, олардың мәнін өзгерту мүмкін болмаса, айнымалылар аз қызығушылық тудырады. Төменде айнымалылармен бірге қолданылатын кейбір операторлар көрсетілген:<br><br>                        *көбейту,
+                        <br> - алу,<br> + қосу,<br> /бөлім,
+                        <br> = тапсырма,<br> == теңдік,<br> &gt; көбірек<br> &lt; аз.<br> != тең емес<br> &gt;= артық немесе тең<br> &lt;= кем немесе тең<br><br> Сол жақтағы айнымалыға нәтижені тағайындау үшін математикалық функцияларды орындайтын операторлар
+                        тағайындау белгісінің оң жағында қолданылуы керек.<br>C ++ операторлары операторлары бір немесе бірнеше дәлелдер қабылдайды және жаңа мәнді шығарады функцияларды ерекше түрі болып табылады. Мысалы: қосу (+), азайту (-), көбейту
+                        (*) және т.б. барлығы операторлар . Операторлар айнымалылар мен тұрақтылар бойынша әртүрлі операцияларды орындау үшін қолданылады.<br>
+
+                    </p>
+                    <h3>Мысал:</h3>
+                </section>
+                <div id="compilator1">
+                    <div id="code1"><pre>
+#include &lt;iostream&gt;
+#include &lt;string&gt;
+using namespace std;
+int main()
+{
+	for (int i=10; i&lt;=20; i++)
+		cout&lt;&lt;i&lt;&lt;" ";
+	cout&lt;&lt;endl;
+	return 0;
+}
+<pre>
+                        </div>
+    
+                        <button id="run1" onclick='run1();'>Запуск</button>
+                        <h5>Шығару:</h5><pre id="output1">Күту...</pre>
+
+                    </div>
+
+                    </ul>
+
+                    <h4 style="margin-top:5%;">Тапсырма</h4>
+                    <p>10-нан 20-ға дейінгі сандардың квадраттарын шығаратын программа жазыңыз.
+                    </p>
+
+
+                    <!-- Compilator -->
+                    <div id="compilator">
+                        <h3>C++ компилятор</h3>
+                        <div id="code"><pre>
+#include &lt;iostream&gt;
+#include &lt;string&gt;
+using namespace std;
+int main()
+{
+	
+	return 0;
+}<pre>
+                    </div>
+
+                    <button id="run" onclick='run();'>Запуск</button>
+                    <h5>Шығару:</h5><pre id="output">Күту...</pre>
+
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <!-- Sidebar -->
+                <div id="sidebar">
+                    <div class="inner">
+
+                        <h5 id="prog_label" style="margin: 0;">Прогресс: 0/10</h5>
+                        <progress id="prog1" style="height: 40px;" max="10" value="0"></progress>
+
+                        <!-- Menu -->
+                        <nav id="menu">
+                            <header class="major">
+                                <h2>Тараулар</h2>
+                            </header>
+                            <ul>
+                                <li><a href="index.html">Басты бет</a></li>
+                                <li>
+                                    <span class="opener">Бірінші тарау</span>
+                                    <ul>
+                                        <li><a href="/c1p1.html">Бірінші қарапайым бағдарлама</a></li>
+                                        <li><a href="/c1p2.html">Операторлар. Салыстыру операторлары</a></li>
+                                        <li><a href="#">Tempus Magna</a></li>
+                                        <li><a href="#">Feugiat Veroeros</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <span class="opener">Екінші тарау</span>
+                                    <ul>
+                                        <li><a href="#">Lorem Dolor</a></li>
+                                        <li><a href="#">Ipsum Adipiscing</a></li>
+                                        <li><a href="#">Tempus Magna</a></li>
+                                        <li><a href="#">Feugiat Veroeros</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <span class="opener">Үшінші тарау</span>
+                                    <ul>
+                                        <li><a href="#">Lorem Dolor</a></li>
+                                        <li><a href="#">Ipsum Adipiscing</a></li>
+                                        <li><a href="#">Tempus Magna</a></li>
+                                        <li><a href="#">Feugiat Veroeros</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <span class="opener">Төртінші тарау</span>
+                                    <ul>
+                                        <li><a href="#">Lorem Dolor</a></li>
+                                        <li><a href="#">Ipsum Adipiscing</a></li>
+                                        <li><a href="#">Tempus Magna</a></li>
+                                        <li><a href="#">Feugiat Veroeros</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Scripts -->
+            <script src="assets/js/jquery.min.js"></script>
+            <script src="assets/js/ace.js"></script>
+            <script src="assets/js/browser.min.js"></script>
+            <script src="assets/js/breakpoints.min.js"></script>
+            <script src="assets/js/util.js"></script>
+            <script src="assets/js/main.js"></script>
+
+            <script>
+                var code;
+
+                $(function() {
+                    code = ace.edit("code"); // создаем редактор из элемента с id="code"
+                    code.setTheme("ace/theme/textmate"); // выбираем тему оформления для подсветки синтаксиса
+                    code.getSession().setMode("ace/mode/c_cpp"); // говорим что код надо подсвечивать как C++ код
+                    code.setShowPrintMargin(false); // опционально: убираем вертикальную границу в 80 сиволов
+                    code.setOptions({
+                        maxLines: Infinity, // опционально: масштабировать редактор вертикально по размеру кода
+                        fontSize: "12pt", // опционально: размер шрифта ставим побольше
+                    });
+                    code.$blockScrolling = Infinity; // отключаем устаревшие, не поддерживаемые фишки редактора
+                });
+            </script>
+            <script>
+                function run() {
+                    // Команда для компиляции на удаленном сервере
+                    var cmd = "g++ -Wall main.cpp -o main_prog && ./main_prog";
+
+                    var output = $("#output");
+                    output.text('');
+                    var to_compile = {
+                        "src": code.getValue(),
+                        "cmd": cmd,
+                    };
+
+                    output.text("Код орындалып жатыр... Күте тұрыңыз.");
+
+                    $.ajax({
+                        url: "https://coliru.stacked-crooked.com/compile",
+                        type: "POST",
+                        data: JSON.stringify(to_compile),
+                        contentType: "text/plain; charset=utf-8",
+                        dataType: "text"
+                    }).done(function(data) {
+                        output.text(data);
+                        alert(output.text());
+                        if (output.text() == "100 121 144 169 196 225 256 289 324 361 400 \n") {
+                            document.getElementById("prog1").value = 1;
+                            document.getElementById("prog_label").innerText = "Прогресс: 1/10";
+                        }
+                    }).fail(function(data) {
+                        output.text("Server error: " + data);
+                    });
+
+
+                };
+            </script>
+
+            <script>
+                var code1;
+
+                $(function() {
+                    code1 = ace.edit("code1"); // создаем редактор из элемента с id="code"
+                    code1.setTheme("ace/theme/textmate"); // выбираем тему оформления для подсветки синтаксиса
+                    code1.getSession().setMode("ace/mode/c_cpp"); // говорим что код надо подсвечивать как C++ код
+                    code1.setShowPrintMargin(false); // опционально: убираем вертикальную границу в 80 сиволов
+                    code1.setOptions({
+                        maxLines: Infinity, // опционально: масштабировать редактор вертикально по размеру кода
+                        fontSize: "12pt", // опционально: размер шрифта ставим побольше
+                    });
+                    code1.$blockScrolling = Infinity; // отключаем устаревшие, не поддерживаемые фишки редактора
+                });
+            </script>
+            <script>
+                function run1() {
+                    // Команда для компиляции на удаленном сервере
+                    var cmd = "g++ -Wall main.cpp -o main_prog && echo 'Компиляция: Орындалды." +
+                        " Бағдарлама қорытындысы:\n' && ./main_prog && echo \"\n\"";
+
+                    var output = $("#output1");
+                    output.text('');
+                    var to_compile = {
+                        "src": code1.getValue(),
+                        "cmd": cmd,
+                    };
+
+                    output.text("Код орындалып жатыр... Күте тұрыңыз.");
+
+                    $.ajax({
+                        url: "https://coliru.stacked-crooked.com/compile",
+                        type: "POST",
+                        data: JSON.stringify(to_compile),
+                        contentType: "text/plain; charset=utf-8",
+                        dataType: "text"
+                    }).done(function(data) {
+                        output.text(data);
+                    }).fail(function(data) {
+                        output.text("Server error: " + data);
+                    });
+                };
+            </script>
+
+</body>
+
+</html>
